@@ -1,13 +1,39 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import {
+  Chakra_Petch,
+  Inter,
+  Poppins,
+  Unbounded,
+  Sora,
+} from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const chakraPetch = Chakra_Petch({
+  variable: "--font-chakrapetch",
+  weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const inter = Inter({
+  variable: "--font-inter",
+  weight: ["300", "400", "500", "600"],
+  subsets: ["latin"],
+});
+
+const poppins = Poppins({
+  variable: "--font-poppins",
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+});
+
+const unbounded = Unbounded({
+  variable: "--font-unbounded",
+  weight: ["300", "400", "500", "600", "700"],
+  subsets: ["latin"],
+});
+
+const Sora = Sora({
+  variable: "--font-sora",
+  weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
 });
 
