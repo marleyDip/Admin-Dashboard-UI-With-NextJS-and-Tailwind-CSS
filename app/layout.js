@@ -31,7 +31,7 @@ const unbounded = Unbounded({
   subsets: ["latin"],
 });
 
-const Sora = Sora({
+const sora = Sora({
   variable: "--font-sora",
   weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
@@ -44,9 +44,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${chakraPetch.variable} ${inter.variable} ${poppins.variable} ${unbounded.variable} ${sora.variable} antialiased`}
       >
         {children}
       </body>

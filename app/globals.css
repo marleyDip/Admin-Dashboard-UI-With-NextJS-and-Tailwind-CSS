@@ -1,1 +1,40 @@
 @import "tailwindcss";
+
+*{
+    box-sizing: border-box;
+    line-style: none;
+}
+
+:root {
+    --prime-color: #066dca;
+    --prime-light: #f3f9ff;
+    --text-color: #222E48;
+    --pera-color: #404A60;
+    --secondary-color: #f37739;
+    --white: #fff;
+    --black: #000;
+    --transition-fast: .3s ease-in-out;
+    --transition-slow: .5s ease-in-out;
+}
+
+@layer utilities {
+    .font-unbounded {
+        font-family: var(--font-unbounded)
+    }
+    
+    .font-poppins {
+        font-family: var(--font-poppins)
+    }
+    
+    .font-sora {
+        font-family: var(--font-sora)
+    }
+    
+    .font-inter {
+        font-family: var(--font-inter)
+    }
+    
+    .font-chakrapetch {
+        font-family: var(--font-chakrapetch)
+    }
+}
