@@ -30,6 +30,7 @@ export default function Navbar({ setIsOpen }) {
   return (
     <>
       <div className="bg-white h-[90px] shadow-lg flex items-center justify-between gap-3 px-[2%]">
+        {/* Search bar */}
         <div
           className="relative hidden search-box border border-[#dfe0e4] h-[45px] lg:flex items-center shadow-xs rounded-full w-70
         outline-none"
@@ -44,18 +45,23 @@ export default function Navbar({ setIsOpen }) {
             className="absolute right-1 p-3 rounded-[50%] bg-[#066dca] text-white  cursor-pointer"
           />
         </div>
+        {/* Search bar */}
 
+        {/* Mobile Navbar */}
         <div
           onClick={() => setIsOpen(true)}
-          className="toggle lg:hidden flex cursor-pointer text-2xl"
+          className="toggle lg:hidden flex text-2xl cursor-pointer"
         >
           <FontAwesomeIcon icon={faBars} />
         </div>
+        {/* Mobile Navbar */}
 
+        {/* Create New Course */}
         <div className="flex items-center gap-3">
-          <span className="hidden lg:flex border border-[#066dca] hover:bg-[#066dca] hover:text-white px-4 py-2 rounded-full shadow-sm cursor-pointer transition-colors duration-200">
+          <span className="hidden lg:flex border border-[#066dca] hover:bg-[#066dca] hover:text-white px-4 py-2 rounded-full shadow-sm transition-colors duration-200 cursor-pointer">
             Create a New Course
           </span>
+          {/* Create New Course */}
 
           {/* Notification */}
           <div
@@ -80,6 +86,7 @@ export default function Navbar({ setIsOpen }) {
                         alt="user-image"
                         className="w-14 h-14"
                       />
+
                       <div>
                         <span className="text-[#212529] font-sora text-lg">
                           Dip Akand
@@ -107,6 +114,7 @@ export default function Navbar({ setIsOpen }) {
                         alt="user-image"
                         className="w-14 h-14"
                       />
+
                       <div>
                         <span className="text-[#212529] font-sora text-lg">
                           Dip Akand
@@ -151,7 +159,10 @@ export default function Navbar({ setIsOpen }) {
                     href="/Profile"
                     className="text-lg hover:text-[#066dca] transition-colors duration-300"
                   >
-                    <FontAwesomeIcon icon={faUserCircle} className="pr-2" />
+                    <FontAwesomeIcon
+                      icon={faUserCircle}
+                      className="pr-2 text-lg"
+                    />
                     My Profile
                   </Link>
                 </li>
