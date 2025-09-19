@@ -17,7 +17,7 @@ export default function Navbar({ setIsOpen }) {
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
   const [isNotificationOpen, setIsNotificationOpen] = useState(false);
 
-  const toggleUserMenu = ({ setIsOpen }) => {
+  const toggleUserMenu = () => {
     setIsUserMenuOpen(!isUserMenuOpen);
     setIsNotificationOpen(false);
   };
