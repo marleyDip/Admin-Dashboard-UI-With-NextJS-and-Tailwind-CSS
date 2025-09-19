@@ -159,11 +159,6 @@ const CourseData = [
   },
   {
     id: 6,
-    name: "Vue.js",
-    Enroll: 30,
-  },
-  {
-    id: 7,
     name: "TypeScript",
     Enroll: 50,
   },
