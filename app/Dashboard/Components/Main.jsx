@@ -479,7 +479,7 @@ export default function Main() {
         {/* Bar Chart */}
 
         {/* Course Information */}
-        <div className="p-4 border border-[#dee2e6] bg-white rounded-xl shadow-md">
+        <div className="p-4 w-full lg:w-[40%] border border-[#dee2e6] bg-white rounded-xl shadow-md">
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-sm font-semibold text-[#404a60]">
               Popular Courses
