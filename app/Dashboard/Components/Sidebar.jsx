@@ -7,9 +7,9 @@ import {
   faUserCircle,
 } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React from "react";
 
 const menuItems = [
   { href: "/Dashboard", icon: faHome, label: "Dashboard" },
@@ -26,12 +26,12 @@ const menuItems = [
     admin: true,
     remix: true,
   },
-  {
-    href: "/AdminUsers",
-    icon: faUserCircle,
-    label: "Users",
-    admin: true,
-  },
+  // {
+  //   href: "/AdminUsers",
+  //   icon: faUserCircle,
+  //   label: "Users",
+  //   admin: true,
+  // },
 ];
 
 // Split items into normal and admin
