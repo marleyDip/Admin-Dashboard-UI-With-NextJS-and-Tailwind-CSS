@@ -21,8 +21,8 @@ This project is designed with clean UI, reusable components, and a mobile-first 
 
 ## 📸 Preview
 
-<img width="1920" height="1080" alt="Screenshot (81)" src="https://github.com/user-attachments/assets/c9ff6b68-ffc8-45ba-935a-c20d4561bc0c" />
-
 <img width="1920" height="1080" alt="Screenshot (80)" src="https://github.com/user-attachments/assets/9978882b-ab05-463f-a270-a4a031195a65" />
+
+<img width="1920" height="1080" alt="Screenshot (82)" src="https://github.com/user-attachments/assets/091ffc02-6baf-4879-b714-8279cd65c82e" />
 
 <img width="1920" height="1647" alt="screencapture-sofian-admin-dashboard-nextjs-vercel-app-2025-09-20-05_06_58" src="https://github.com/user-attachments/assets/f9ea1a19-d092-47aa-9702-605afa547501" />
