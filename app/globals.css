@@ -3,7 +3,7 @@
 * {
     box-sizing: border-box;
     outline: none;     /* removes outlines */
-    text-decoration: none; /* removes underline from links */
+    //text-decoration: none; /* removes underline from links */
 }
 
 :root {
