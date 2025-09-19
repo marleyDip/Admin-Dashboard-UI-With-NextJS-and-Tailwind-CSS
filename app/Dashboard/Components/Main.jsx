@@ -162,6 +162,11 @@ const CourseData = [
     name: "TypeScript",
     Enroll: 50,
   },
+  {
+    id: 7,
+    name: "JavaScript",
+    Enroll: 50,
+  },
 ];
 
 export default function Main() {
@@ -308,6 +313,7 @@ export default function Main() {
         </div>
       </div>
       {/* Short Intro */}
+
       {/* Briefly Intro  */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
         {/* Instructor Information */}
@@ -330,15 +336,15 @@ export default function Main() {
                     Instructor
                   </th>
 
-                  <th className="px-4 py-3 text-center font-medium cursor-pointer">
+                  <th className="px-4 py-3 text-left font-medium cursor-pointer">
                     Courses
                   </th>
 
-                  <th className="px-4 py-3 text-center font-medium cursor-pointer">
+                  <th className="px-4 py-3 text-left font-medium cursor-pointer">
                     Students
                   </th>
 
-                  <th className="px-4 py-3 text-center font-medium cursor-pointer">
+                  <th className="px-4 py-3 text-left font-medium cursor-pointer">
                     Reviews
                   </th>
                 </tr>
@@ -350,7 +356,7 @@ export default function Main() {
                     key={instructor.id}
                     className="border-t border-[#dee2e6] hover:bg-gray-50 transition-colors"
                   >
-                    <td className="flex items-center gap-3 px-4 py-3">
+                    <td className="flex items-left gap-3 px-4 py-3">
                       <Image
                         src={instructor.img}
                         alt={instructor.name}
@@ -364,15 +370,15 @@ export default function Main() {
                       </span>
                     </td>
 
-                    <td className="px-4 py-3 text-[#404a60] text-xs font-normal text-center">
+                    <td className="px-4 py-3 text-[#404a60] text-xs font-normal text-left">
                       {instructor.courses}
                     </td>
 
-                    <td className="px-4 py-3 text-[#404a60] text-xs font-normal text-center">
+                    <td className="px-4 py-3 text-[#404a60] text-xs font-normal text-left">
                       {instructor.students}
                     </td>
 
-                    <td className="px-4 py-3 text-[#404a60] text-xs font-normal text-center">
+                    <td className="px-4 py-3 text-[#404a60] text-xs font-normal text-left">
                       <FontAwesomeIcon
                         icon={faStar}
                         className="text-yellow-500 pr-2"
@@ -407,15 +413,15 @@ export default function Main() {
                     Courses Title
                   </th>
 
-                  <th className="px-4 py-3 text-center font-medium cursor-pointer">
+                  <th className="px-4 py-3 text-left font-medium cursor-pointer">
                     Hours
                   </th>
 
-                  <th className="px-4 py-3 text-center font-medium cursor-pointer">
+                  <th className="px-4 py-3 text-left font-medium cursor-pointer">
                     Total Lesson
                   </th>
 
-                  <th className="px-4 py-3 text-center font-medium cursor-pointer">
+                  <th className="px-4 py-3 text-left font-medium cursor-pointer">
                     Students
                   </th>
                 </tr>
@@ -427,7 +433,7 @@ export default function Main() {
                     key={recent.id}
                     className="border-t border-[#dee2e6] hover:bg-gray-50 transition-colors"
                   >
-                    <td className="flex items-center gap-3 px-4 py-3">
+                    <td className="flex items-left gap-3 px-4 py-3">
                       <Image
                         src={recent.img}
                         alt={recent.name}
@@ -441,15 +447,15 @@ export default function Main() {
                       </span>
                     </td>
 
-                    <td className="px-4 py-3 text-[#404a60] text-xs font-normal text-center">
+                    <td className="px-4 py-3 text-[#404a60] text-xs font-normal text-left">
                       {recent.time}
                     </td>
 
-                    <td className="px-4 py-3 text-[#404a60] text-xs font-normal text-center">
+                    <td className="px-4 py-3 text-[#404a60] text-xs font-normal text-left">
                       {recent.lesson}
                     </td>
 
-                    <td className="px-4 py-3 text-[#404a60] text-xs font-normal text-center">
+                    <td className="px-4 py-3 text-[#404a60] text-xs font-normal text-left">
                       {recent.students}
                     </td>
                   </tr>
@@ -493,11 +499,11 @@ export default function Main() {
                     Courses Name
                   </th>
 
-                  <th className="px-4 py-3 text-center font-medium cursor-pointer">
+                  <th className="px-4 py-3 text-left font-medium cursor-pointer">
                     Rating
                   </th>
 
-                  <th className="px-4 py-3 text-center font-medium cursor-pointer">
+                  <th className="px-4 py-3 text-left font-medium cursor-pointer">
                     Enrolled
                   </th>
                 </tr>
@@ -509,18 +515,18 @@ export default function Main() {
                     key={course.id}
                     className="border-t border-[#dee2e6] hover:bg-gray-50 transition-colors"
                   >
-                    <td className="px-4 py-3 text-[#404a60] text-xs font-normal text-center">
+                    <td className="px-4 py-3 text-[#404a60] text-xs font-normal text-left">
                       {course.name}
                     </td>
 
-                    <td className="px-4 py-3 text-[#404a60] text-xs font-normal text-center">
+                    <td className="px-4 py-3 text-[#404a60] text-xs font-normal text-left">
                       <FontAwesomeIcon
                         icon={faStar}
                         className="text-yellow-500"
                       />
                     </td>
 
-                    <td className="px-4 py-3 text-[#404a60] text-xs font-normal text-center">
+                    <td className="px-4 py-3 text-[#404a60] text-xs font-normal text-left">
                       {course.Enroll}
                     </td>
                   </tr>
