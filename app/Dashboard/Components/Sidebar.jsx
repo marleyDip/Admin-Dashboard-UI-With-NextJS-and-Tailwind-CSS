@@ -92,6 +92,7 @@ export default function Sidebar({ isOpen, setIsOpen }) {
           {adminItems.length > 0 && (
             <>
               <p className="text-neutral-500 font-sora tracking-wide ">Admin</p>
+
               {adminItems.map((item) => (
                 <li
                   key={item.href}
@@ -118,6 +119,7 @@ export default function Sidebar({ isOpen, setIsOpen }) {
           )}
         </ul>
 
+        {/* logout */}
         <ul className="absolute bottom-0 left-0 right-0 sidebar-nav flex flex-col items-start justify-end w-full p-5 pb-2 gap-3">
           <li className="w-full p-4 rounded-xl text-neutral-500 font-sora transition-colors duration-300">
             <Link href="/logout" className="flex items-center text-lg">
